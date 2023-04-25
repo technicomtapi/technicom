@@ -80,15 +80,16 @@ button:hover {
 }
 
 .wrapper img {
-   height: 70px;
+   height: 60px;
    position: relative;
-   top: 3px;
-   left: 15px;
+   top: 10px;
+   left: 10px;
 }
 
 .loader {
    height: 100px;
    width: 100px;
+   background: none;
    border: 10px solid #f2bb06;
    border-radius: 50%;
    border-left-color: #23395d;
@@ -166,7 +167,7 @@ ul li ul.dropdown li {
 
 .dropdown {
    width: 100%;
-   background: #1a2d4e;
+   background: #172742;
    position: absolute;
    z-index: 999;
    display: none;
@@ -413,6 +414,11 @@ nav button {
 @media (max-width: 1500px) {
    .home-cover img {
       height: 500px;
+      transition: all 0.1s ease;
+   }
+
+   .home-cover img:hover {
+      transform: scale(1.02);
    }
 
    .tab-cover {
@@ -464,8 +470,10 @@ nav button {
    }
 
    .arrow-anime span {
-      width: 20px;
-      height: 20px;
+      width: 15px;
+      height: 15px;
+      border-bottom: 4px solid #edf0f1;
+      border-right: 4px solid #edf0f1;
    }
 
    .nav_title h1 {
@@ -797,11 +805,11 @@ footer img {
    cursor: pointer;
    margin-left: 30px;
    margin-top: 10px;
-   transition: all 0.3s ease 0s;
+   transition: all 0.1s ease 0s;
 }
 
 footer img:hover {
-   transform: scale(1.2);
+   transform: scale(1.1);
 }
 
 footer .arrow {
@@ -983,13 +991,12 @@ footer .arrow {
    height: 400px;
    padding: 15%;
    border-radius: 20px;
-   background: url(img/avatar.jpeg);
+   background: url(img/projects/peanut\ digger.png);
    background-size: cover;
    background-position: center;
    position: relative;
    transition: width 0.5s;
    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-   transition: all 0.2s ease 0s;
    text-align: center;
    align-items: center;
    place-items: center;
@@ -997,10 +1004,81 @@ footer .arrow {
    transition: all 0.1s ease;
 }
 
+.img-desc-box:nth-child(2) {
+   background: url(img/projects/grain\ bagger.png);
+   background-size: cover;
+   background-position: center;
+}
+
+.img-desc-box:nth-child(3) {
+   background: url(img/projects/sargassum.png);
+   background-size: cover;
+   background-position: center;
+}
+
+.img-desc-box:nth-child(4) {
+   background: url(img/projects/hr\ lite\ 2.png);
+   background-size: cover;
+   background-position: center;
+}
+
+.img-desc-box:nth-child(5) {
+   background: url(img/projects/pinoy\ coco\ sorbetes.png);
+   background-size: cover;
+   background-position: center;
+}
+
+.img-desc-box:nth-child(6) {
+   background: url(img/projects/project\ geomap.png);
+   background-size: cover;
+   background-position: center;
+}
+
+.img-desc-box:nth-child(7) {
+   background: url(img/projects/iot\ -\ based\ monitoring\ system.png);
+   background-size: cover;
+   background-position: center;
+}
+
+.img-desc-box:nth-child(8) {
+   background: url(img/projects/phototherapy\ light\ system.png);
+   background-size: cover;
+   background-position: center;
+}
+
+.img-desc-box:nth-child(9) {
+   background: url(img/projects/btc\ lab\ kit.png);
+   background-size: cover;
+   background-position: center;
+}
+
+.img-desc-box:nth-child(10) {
+   background: url(img/projects/rte\ quail\ eggs.png);
+   background-size: cover;
+   background-position: center;
+}
+
+.img-desc-box:nth-child(11) {
+   background: url(img/projects/bamboo\ composite\ molder.png);
+   background-size: cover;
+   background-position: center;
+}
+
+.img-desc-box:nth-child(12) {
+   background: url(img/projects/water\ hyacinth.png);
+   background-size: cover;
+   background-position: center;
+}
+
 .img-desc-box h2 {
+   padding-top: 20px;
    padding-bottom: 20px;
    font-size: xx-large;
    opacity: 0;
+}
+
+#wtrhya {
+   padding-top: 18px;
 }
 
 .img-desc-box p {
@@ -1056,7 +1134,8 @@ footer .arrow {
    cursor: pointer;
 }
 
-.accordion label::before {
+.accordion li label::before {
+   color: #f2bb06;
    content: '+';
    margin-right: 10px;
    font-size: 24px;
@@ -1077,7 +1156,24 @@ input[type="radio"] {
 }
 
 .accordion input[type="radio"]:checked + label + .content {
-   max-height: 2000px;
+   max-height: 20000px;
+}
+
+.highlight {
+   color: red;
+}
+
+.links {
+   color: #f2bb06;
+}
+
+.links:hover {
+   text-decoration: underline;
+}
+
+.tab {
+   display: inline-block;
+   margin-left: 2em;
 }
 
 @media (max-width: 1500px) {
